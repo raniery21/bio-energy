@@ -31,7 +31,7 @@
         <form name = "simulador_v1">
           <header class="simulador">
             <h1>Simulador Solar</h1>
-            <h2>Quer saber quanto custa para instalar energia solar?</h2>
+            <h2>Quer ter uma estimativa, dado os valores no mercado, de quanto custa instalar a energia solar?</h2>
           </header>
           
           <div>
@@ -61,7 +61,10 @@
       </div>
     </div>
   </div>
-
+  <hr>
+  <p>Quanto maior for o consumo de energia maior deverá ser o número de painéis solares para atender
+    a demanda de energia. A localização também é um dos fatores que determinam o custo,
+    devido a incidência solar ser diferente em cada região, mais painéis também deverão ser acrescentados.</p>
   <br>
   <br>
   <br>
@@ -88,7 +91,9 @@
   <script language=javascript type="text/javascript">
     function calcSimuladorSolar(){
       valor = parseInt(simulador_v1.gasto.value)
-      alert (valor * 60)}
+      valor = valor * 60
+      alert ("O valor de investimento estimado é de R$ " + valor)
+      }
   </script>
 </body>
 </html>
