@@ -1,0 +1,32 @@
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  .nave{
+      background-color: orange;
+      margin-top: -25px;
+      margin-left: -25px;
+      margin-right: -25px;
+  }
+
+  .simulador{
+    text-align: center;
+  }
+
+  .simulador_v1 {
+    display: block;
+    box-sizing: border-box;
+}
+
+  .painel{
+      width: 800px;
+      height: 400px;
+  }
