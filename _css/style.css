@@ -1,9 +1,13 @@
-body {
+  body {
     padding: 25px;
     background-color: white;
     color: black;
     font-size: 25px;
     text-align: justify;
+  }
+
+  .font{
+    font-family: RobotoSlab, Helvetica, sans-serif;
   }
   
   p{
@@ -21,6 +25,7 @@ body {
       margin-top: -25px;
       margin-left: -25px;
       margin-right: -25px;
+      font-family: RobotoSlab, Helvetica, sans-serif;
   }
 
   .simulador{
@@ -69,4 +74,37 @@ body {
 
   .text-center .img-responsive {
     margin: 0 auto;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .copy{
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 30px;
+    color: rgb(37, 37, 37);
   }

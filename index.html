@@ -6,10 +6,10 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <!--Style(CSS)-->
   <link rel="stylesheet" href="_css/style.css">
-  <link rel="stylesheet" href= "w3.css">   
+  <link rel="stylesheet" href= "w3.css">
 </head>
 <body>
-  <!-- Image and text -->
+  <!-- NavBar -->
   <nav class="nave navbar navbar-expand-lg navbar-light" style="background-color: orange">
     <img src="_img/lampada.png" width="50" height="50" class="d-inline-block align-top" alt="" onclick="darkmode()">
     <a class="navbar-brand" href="#">Bio-Energy</a>
@@ -18,20 +18,21 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="home.html">Home</a>
         <a class="nav-item nav-link" href="index.html">Simulador</a>
-        <a class="nav-item nav-link" href="quem somos.html">Quem somos</a>
+        <a class="nav-item nav-link" href="quem_somos.html">Quem somos</a>
       </div>
     </div>
   </nav>  
       <!--Simulador-->
-  <div class="container">
+  <div class="container font fadein">
     <div class="row justify-content-center">
       <div class="col-6">   
         <form name = "simulador_v1">
           <header class="simulador">
-            <h1>Simulador Solar</h1>
-            <h2>Quer ter uma estimativa, dado os valores no mercado, de quanto custa instalar a energia solar?</h2>
+            <h1 class="font">Simulador Solar</h1>
+            <h2 class="font fadein">Quer ter uma estimativa, dado os valores no mercado, de quanto custa instalar a energia solar?</h2>
+            <br>
           </header>
           
           <div>
@@ -64,22 +65,14 @@
   <br>
   <br>
   <hr>
-  <p class="fadein">Quanto maior for o consumo de energia maior deverá ser o número de painéis solares para atender
+  <p class="fadein col-10 container">Quanto maior for o consumo de energia maior deverá ser o número de painéis solares para atender
     a demanda de energia. A localização também é um dos fatores que determinam o custo,
     devido a incidência solar ser diferente em cada região, mais painéis também deverão ser acrescentados.</p>
   <br>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
   <footer class="w3-container w3-orange" style="height:80px; width: 2500px; margin: -30px;">
-		
+		<div class="copy">©Copyright; 2020 Bio-Energy</div>
   </footer>
 
   <!--Bootstrap(JS)-->
