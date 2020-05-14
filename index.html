@@ -24,7 +24,7 @@
       </div>
     </div>
   </nav>  
-  <!--Simulador-->
+      <!--Simulador-->
   <div class="container font fadein">
     <div class="row justify-content-center">
       <div class="col-6">   
@@ -56,7 +56,7 @@
           </div>
 
           <div>
-          <button name="button" type="submit" id="simulador-v1_submit" onclick=calcSimuladorSolar()>Simular</button>
+          <button name="button" type="submit" id="simulador-v1_submit" onclick=calcSimuladorSolar2()>Simular</button>
           </div>
         </form>
       </div>
@@ -65,12 +65,13 @@
   <br>
   <br>
   <hr>
-  <p class="fadein col-10 container">Quanto maior for o consumo de energia maior deverá ser o número de painéis solares para atender
-    a demanda de energia. A localização também é um dos fatores que determinam o custo,
-    devido a incidência solar ser diferente em cada região, mais painéis também deverão ser acrescentados.</p>
+  <p class="fadein col-10 container">*Quanto maior for o consumo de energia maior deverá ser o número de painéis solares para atender
+    a demanda de energia; A localização, devido a incidência solar ser diferente em cada região, além de outros fatores, são levados em conta no valor final.
+    Dependendo da sua região, entre 4 e 9 anos seu investimento será pago e poderá gerar lucro. <br> Observação: O preço final é obtido da média dos preços 
+    que as empresas cobram, e não de uma empresa específica.</p>
   <br>
   <br>
-  <!--Footer-->
+
   <footer class="w3-container w3-orange" style="height:80px; width: 2500px; margin: -30px;">
 		<div class="copy">©Copyright; 2020 Bio-Energy</div>
   </footer>
@@ -85,8 +86,18 @@
     function calcSimuladorSolar(){
       valor = parseInt(simulador_v1.gasto.value)
       valor = valor * 60
-      alert ("O valor de investimento estimado é de R$ " + valor)
-      }
+      alert ("O valor de investimento estimado está em torno de R$ " + valor)
+    }
+
+    function calcSimuladorSolar2(){
+      gastoContaLuz = parseInt(simulador_v1.gasto.value)
+      valorInvest = gastoContaLuz * 60
+      descontoMensal = gastoContaLuz - (gastoContaLuz / 3)
+      lucro = descontoMensal * 180   
+      alert ("O valor de investimento estimado está em torno de R$ " + valorInvest + 
+      ". O seu investimento deverá ser pago entre 4 a 9 anos. E a economia total prevista até o final"
+      + " da vida útil do simulador é: R$ " + lucro)
+    }
   </script>
 </body>
 </html>
